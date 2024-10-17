@@ -14,7 +14,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
-oute::get('/', [UserController::class, 'index'])->name('home');
+route::get('/', [UserController::class, 'index'])->name('home');
 
 use App\Http\Controllers\AuthController;
 
