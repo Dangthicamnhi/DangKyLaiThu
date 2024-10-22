@@ -1,13 +1,14 @@
-/* General Styles */
+/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
+/* Body and font styling */
 body {
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 /* Navbar */
@@ -16,83 +17,259 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #5ab8f5;
-    color: white;
+    background-color: #40a4db;
 }
 
-.navbar .logo img {
-    width: 50px;
+.navbar-left img {
+    height: 50px;
 }
 
-.navbar .menu a {
+.navbar-center ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-center ul li {
     margin: 0 15px;
+}
+
+.navbar-center ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-weight: bold;
 }
 
-.navbar .menu a:hover {
-    text-decoration: underline;
+.navbar-right input {
+    padding: 5px;
+    margin-right: 10px;
 }
 
-.search-box {
+.navbar-right button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.navbar-right button:hover {
+    background-color: #0056b3;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+/* Styling for search container */
+.search-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.search-box input {
-    padding: 5px;
+/* Style the search input */
+.search-container input[type="text"] {
     border: none;
-    border-radius: 15px;
     outline: none;
+    padding: 5px;
+    font-size: 16px;
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 30px;
 }
 
-.search-box button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    margin-left: 5px;
+/* Style the camera and microphone icons */
+.search-container .camera,
+.search-container .mic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
     cursor: pointer;
 }
 
-.user-options button {
-    background: none;
-    border: none;
-    color: white;
+.search-container .camera i,
+.search-container .mic i {
     font-size: 20px;
-    margin-left: 10px;
+    color: #333;
+}
+
+/* Optional hover effects */
+.search-container .camera:hover i,
+.search-container .mic:hover i {
+    color: #007bff;
+}
+
+/* Add focus effect on search input */
+.search-container input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+/* Container for the user options (login and signup buttons) */
+.user-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+}
+
+/* Style for login button */
+.user-options .login-btn,
+.user-options .profile-btn {
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 50px; /* Circular button style */
+    padding: 10px 20px; /* Padding inside the button */
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for 3D effect */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Style for the images inside the buttons */
+.user-options .login-btn img,
+.user-options .profile-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Space between image and text (if needed) */
+}
+
+/* Hover effect */
+.user-options .login-btn:hover,
+.user-options .profile-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional style to increase the button's size when hovered */
+.user-options .login-btn:hover img,
+.user-options .profile-btn:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 /* Footer */
 .footer {
-    background-color: #5ab8f5;
-    padding: 50px 20px;
+    background-color: #40a4db;
+    padding: 40px 20px;
     color: white;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
+}
+
+/* Container for the follow-us section */
+.follow-us {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.follow-us h4 {
+    /* font-size: 18px;
+    margin-bottom: 15px;
+    color: #333; Text color */
+}
+
+/* Style for the list of social media icons */
+.follow-us ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+}
+
+/* Style for the links (social media icons) */
+.follow-us ul a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default icon color */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effects for the social media icons */
+.follow-us ul a:hover {
+    color: #007bff; /* Change icon color on hover (blue) */
+}
+
+/* Optional: Add background color to the icons with circular effect */
+.follow-us ul a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Light background for icons */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Change background and apply scale effect on hover */
+.follow-us ul a:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+/* General Footer Styles */
+footer {
+    background-color: #f8f9fa; /* Light background for footer */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
-.footer .company img {
-    width: 200px;
-    margin-bottom: 20px;
+/* Style for the company section (logo and description) */
+.company {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+    text-align: left;
 }
 
-.footer-links {
-    margin-left: 30px;
-}
-
-.footer-links h4 {
+.company img {
+    width: 100px; /* Set width for the logo */
     margin-bottom: 15px;
 }
 
+.company p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Styles for the footer-links sections */
+.footer-links {
+    flex: 1;
+    /* min-width: 200px; */
+    margin: 0 20px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue heading */
+}
+
 .footer-links ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
 }
 
 .footer-links ul li {
@@ -100,26 +277,61 @@ body {
 }
 
 .footer-links ul li a {
-    color: white;
     text-decoration: none;
+    color: #333; /* Default link color */
+    font-size: 14px;
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 .footer-links ul li a:hover {
-    text-decoration: underline;
+    color: #007bff; /* Blue on hover */
 }
 
-.follow-us ul {
-    list-style-type: none;
-    display: flex;
+/* Responsive styles */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center;
+    }
+
+    .company, .footer-links {
+        margin-bottom: 30px;
+    }
+
+    .company img {
+        margin: 0 auto 15px; /* Center logo on small screens */
+    }
+
+    .company p {
+        text-align: center;
+    }
+
+    .footer-links ul li {
+        text-align: center;
+    }
 }
 
-.follow-us ul li {
-    margin-right: 15px;
+/* Styling for Google Maps iframe */
+.google-maps-iframe {
+    width: 100%; /* Makes iframe take full width of its container */
+    height: 450px; /* Default height */
+    border: none; /* Removes border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for better presentation */
+    max-width: 1000px; /* Sets a max width so it doesn’t get too large on wide screens */
+    margin: 20px auto; /* Centers the iframe horizontally */
+    display: block; /* Ensures it's a block element for centering */
 }
 
-.follow-us ul li a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .google-maps-iframe {
+        height: 350px; /* Reduce height on smaller screens */
+    }
 }
 
+@media screen and (max-width: 480px) {
+    .google-maps-iframe {
+        height: 300px; /* Further reduce height on mobile */
+    }
+}
