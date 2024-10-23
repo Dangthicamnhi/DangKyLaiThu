@@ -1,0 +1,51 @@
+
+
+.headerAdmin {
+    display: flex;
+    justify-content: space-between; /* Chia không gian giữa các phần tử */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    padding: 10px; /* Khoảng cách lề */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-family: Pacifico;
+    font-weight: bold;
+    color: #333;
+    font-size: 40px; 
+    width: 60%; 
+    text-align: end;
+}
+
+.logout a {
+    margin-right: 20px;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+    margin-left: 10%;
+    font-size: 20px;
+    margin: 5px;
+}
+.nav-link:hover {
+    color: orange;
+}
+
+.nav{
+    height: 500px;
+   
+}
+
+.menu{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.nav-link.active {
+    color: orange;
+}
