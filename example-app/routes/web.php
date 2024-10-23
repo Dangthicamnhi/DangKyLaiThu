@@ -14,4 +14,14 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [UserController::class, 'index'])->name('home');
+route::get('/', [UserController::class, 'index'])->name('home');
+
+use App\Http\Controllers\AuthController;
+
+// routes/web.php
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+
