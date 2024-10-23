@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
-<h3 class="text-center">Danh sách User</h3>
-<div class="content" style="background-color: #ccc; height:600px; overflow-y: auto; overflow-x: hidden;">
+<h3 class="text-center">DANH SÁCH KHÁCH HÀNG</h3>
+<div class="content" style="background-color: #ccc; height:80vh; overflow-y: auto; overflow-x: hidden;">
     <div class="row justify-content-center">
         <div class="col-md-12">
             @if (Session::has('success'))
@@ -13,9 +13,9 @@
                 <thead>
                     <tr>
                         <th class="text-center">#</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Phone</th>
+                        <th>Họ & Tên</th>
+                        <th>Mail</th>
+                        <th>Số Điện Thoại</th>
                         <th>Role</th>
                         <th>Avatar</th>
                         <th class="text-center">Thao tác</th>
@@ -47,8 +47,7 @@
                                 <img src="{{ asset('avatar/' . $user->avatar) }}" width="70px" height="70px" alt="avatar">
                             </td>
                             <td class="text-center">
-                                <a class="btn btn-success" href="{{ route('user.updateUser', $user->id) }}">Update</a>
-                                <a class="btn btn-info" href="{{ route('user.readUser', $user->id) }}">READ</a>
+                                <a class="btn btn-light text-primary" href="{{ route('user.updateUser', $user->id) }}">Update</a>
                                 <a class="btn btn-danger" href="{{ route('user.deleteUser', $user->id) }}"
                                    onclick="return confirm('Bạn có chắc chắn muốn xóa user có tên là: {{ $user->name }} này?');">DELETE</a>
                             </td>

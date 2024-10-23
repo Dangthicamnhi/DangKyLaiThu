@@ -1,0 +1,60 @@
+
+
+.headerAdmin {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bg-nav{
+    background-color: #E9E9E9;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #0193FD;
+    font-size: 40px; 
+    width: 60%; 
+    text-align: end;
+}
+
+.logout a {
+    margin-right: 20px;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    margin-left: 10%;
+    font-size: 20px;
+    margin: 5px;
+}
+.nav-link:hover {
+    color: #0193FD;
+}
+
+.nav{
+    height: 500px;
+   
+}
+
+.menu{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:active {
+    color: #ffffff;
+    background-color: #0193FD;
+}
