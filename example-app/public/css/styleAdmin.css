@@ -2,9 +2,9 @@
 
 .headerAdmin {
     display: flex;
-    justify-content: space-between; /* Chia không gian giữa các phần tử */
-    align-items: center; /* Canh giữa theo chiều dọc */
-    padding: 10px; /* Khoảng cách lề */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
 }
 
 a {
@@ -12,10 +12,18 @@ a {
     color: black;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+.bg-nav{
+    background-color: #E9E9E9;
+}
+
 .logo {
-    font-family: Pacifico;
+    font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    color: #333;
+    color: #0193FD;
     font-size: 40px; 
     width: 60%; 
     text-align: end;
@@ -26,13 +34,13 @@ a {
 }
 
 .nav-link{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-left: 10%;
     font-size: 20px;
     margin: 5px;
 }
 .nav-link:hover {
-    color: orange;
+    color: #0193FD;
 }
 
 .nav{
@@ -46,6 +54,7 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.nav-link.active {
-    color: orange;
+.nav-link:active {
+    color: #ffffff;
+    background-color: #0193FD;
 }

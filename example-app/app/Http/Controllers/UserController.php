@@ -22,13 +22,7 @@ class UserController extends Controller
         //}
         //return redirect("login")->withSuccess('You are not allowed to access');
     }
-
-    public function readUser($id)
-    {
-        $user = User::find($id);
-        return view('user.read', ['user' => $user]);
-    }
-
+    
     public function updateUser($id)
     {
         $user = User::find($id);

@@ -27,7 +27,6 @@ Route::post('/login', [AuthController::class, 'login']);
 //show trang admin
 Route::get('/admin', [UserController::class, 'showAdminForm'])->name('admin');
 
-Route::get('read/{id}', [UserController::class, 'readUser'])->name('user.readUser');
 Route::get('update/{id}', [UserController::class, 'updateUser'])->name('user.updateUser');
 
 Route::post('update/{id}', [UserController::class, 'postUpdateUser'])->name('user.postUpdateUser');
