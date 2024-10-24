@@ -1,25 +1,28 @@
-@extends('header')
-@section('title', 'login')
+@extends('user.header')
+@section('title', 'Login')
+<link rel="stylesheet" href="{{ asset('css/login.css') }}">
+
 @section('content')
     <div class="container">
 
-        <div class="form-container">
-            <div class="form-header">
-                <h2>Login</h2>
-                <button class="close-btn">&times;</button>
+        <div class="login-container">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form action="{{ route('login') }}" method="POST">
+                @csrf
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
             </div>
-            <div class="form-body">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="#" style="display: block; text-align: right; margin-bottom: 10px;">Forgot Password?</a>
-                <button>Login</button>
+            <div class="social-login">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-google"></i></a>
             </div>
-            <div class="form-footer">
-                <div class="social-login">
-                    <img src="facebook-icon.png" alt="Facebook">
-                    <img src="google-icon.png" alt="Google">
-                </div>
-                <p>New here? <a href="#">Register</a></p>
+            <div class="register-link">
+                New Here? <a href="{{ route('register') }}">Register</a>
             </div>
         </div>
     </div>
