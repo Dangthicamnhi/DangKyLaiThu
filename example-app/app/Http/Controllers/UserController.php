@@ -35,10 +35,10 @@ class UserController extends Controller
         try {
             $input = $request->validate([
                 'name' => 'required',
-                'email' => 'required|email|unique:users',
+                'email' => 'required|email|unique:users,email,' . $id,
                 'phone' => 'required|min:10',
                 'role' => 'required',
-                'avatar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+                'avatar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
                 
                 
             ]);
@@ -49,7 +49,7 @@ class UserController extends Controller
             $user->email = $input['email'];
             $user->phone = $input['phone'];
             $user->role = $input['role'];
-            $user->avata = $input['avatar'];
+            //$user->avata = $input['avatar'];
             
     
              // Check if a new image is uploaded
@@ -68,9 +68,9 @@ class UserController extends Controller
     
             // Save the updated user
     
-            return redirect()->to('list')->with('success', 'User upload deleted !');
+            return redirect()->to('admin')->with('success', 'User upload deleted !');
         } catch (Exception $ex) {
-            return redirect()->to('list')->with('failed', 'Failed to update user !');
+            return redirect()->to('admin')->with('failed', 'Failed to update user: ' . $ex->getMessage());
         }
     }
 
