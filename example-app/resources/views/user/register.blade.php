@@ -28,7 +28,7 @@
         </div> --}}
         <div class="register-container">
             <div class="register-box">
-                <div class="close-button">✕</div>
+                {{-- <div class="close-button">✕</div> --}}
                 <h1>Register</h1>
                 <form>
                     <input type="text" placeholder="FullName" required>
@@ -38,7 +38,7 @@
                         <i class="fab fa-facebook"></i>
                         <i class="fab fa-google"></i>
                     </div>
-                    <p>Already member? <a href="#">Login</a></p>
+                    <p>Already member? <a href="{{ route('login', []) }}">Login</a></p>
                     <button type="submit">Register</button>
                 </form>
             </div>

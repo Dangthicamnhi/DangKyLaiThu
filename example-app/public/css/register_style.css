@@ -68,17 +68,19 @@ body {
     cursor: pointer;
 }
 
-.fb {
-    color: #4267B2;
+.fab {
+    color: #fff;
+    margin: 0 10px;
 }
 
+/*
 .google {
     color: #DB4437;
-}
+} */
 
 .register-box p {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .register-box a {

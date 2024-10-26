@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    position: relative;
+    width: 400px;
+    background: linear-gradient(to bottom right, #b3e5fc, #4fc3f7);
+    border-radius: 30px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.login-container:hover {
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #e0f7fa;
+    border: 1px solid #81d4fa;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-container input:focus {
+    background-color: #d0f0f9;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0288d1;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0277bd;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #bbdefb;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-login a {
+    margin: 0 15px;
+    font-size: 26px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-login a:hover {
+    color: #bbdefb;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #bbdefb;
+}
+
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-button:hover {
+    color: #bbdefb;
+}
