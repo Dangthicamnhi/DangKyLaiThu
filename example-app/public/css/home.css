@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-fluid {
+    align-items: start;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header{
+    background-color: #AFAFAF;
+    height: 50vh;
+}
+
+.text
+
+#left-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #1687C6;           
+}
+
+#left-header h1{
+    font-weight: 700;
+    font-style: italic;
+}
+
+#left-header h3{
+    font-weight: 600;
+    font-size: xx-large;
+}
+#left-header p{
+    font-size: xx-large;
+    width: 80%; 
+}
+
+#artHeader{
+    width: 100vh;
+}
