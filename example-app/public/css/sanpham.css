@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-art {
+    flex: 1;
+    max-width: 100%;
+    min-width: 62%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-art {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.main-art img, .sub-art img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .main-art, .sub-art {
+        flex-basis: 100%; /* Đảm bảo mỗi phần tử chiếm toàn bộ chiều rộng của container */
+    }
+
+    .sub-art {
+        flex-direction: row; /* Các hình ảnh trong .sub-art sẽ xếp theo chiều ngang trên màn hình nhỏ */
+    }
+}
+
+/* Media query cho màn hình rất nhỏ (di động) */
+@media (max-width: 576px) {
+    .main-art img, .sub-art img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.tag-name {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: #ccf3f4;
+}
+
+.dacdiem{
+    display: inline-block;
+    margin: 0 10px;
+}
