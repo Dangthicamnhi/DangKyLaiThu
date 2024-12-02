@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.tieude{
+    color: #1687C6;
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+.header {
+    background-color: #AFAFAF;
+    height: 50vh;
+}
+
+#left-header {
+    display: block;
+    color: #1687C6;
+    padding: 20px;
+}
+
+#left-header h1 {
+    font-weight: 700;
+    font-style: italic;
+}
+
+#left-header h3 {
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+#left-header p {
+    font-size: xx-large;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.art-home {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+.sukien {
+    margin-top: 50px;
+}
+
+.bg-sukien {
+    background-color: #D7E7FF;
+    padding: 20px;
+}
+
+.img-sukien {
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+
+.sukien, .khuyenmai,.sanpham{
+    margin: 20px 0 !important;
+}
+
+.card-sukien, .card-khueynmai{
+    background-color: #dbf3fc;
+}
+
+.card-sukien, .card-khueynmai, .card-sanpham{
+    margin: 20px 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-sanpham{
+    width: 40vh;
+    display: inline-block;
+}
+
+.tieude-sukien {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.noidung-sukien {
+    font-size: 16px;
+    color: #555;
+}
+
+.img-khuyenmai{
+    width: 70%;
+}
+
+.tieude-khuyenmai, .noidung-khuyenmai{
+    color: #1687C6;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.thoihan-khuyenmai{
+    font-size: x-large;
+}
+
+.img-sanpham{
+    height: 50vh;
+}
+
+.tieude-sanpham{
+    color: #1687C6;
+    font-size: large;
+    font-weight: 700;
+}
