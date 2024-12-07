@@ -1,0 +1,24 @@
+#header {
+    background: #D7E7FF;
+    margin-bottom: 20px ;
+}
+
+.img_header {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+.dichVu {
+    margin: 20px auto;
+    background-color: #D7E7FF;
+}
+
+.tenDichVu ,.noiDung {
+color: #1687C6;
+}
+
+.tenDichVu {
+    font-weight: 700;
+    font-size: xx-large;
+}

@@ -91,5 +91,14 @@ class UserController extends Controller
     {
         return view('user.dichvu');
     }
+
+    public function showBaoHanh()
+    {
+        return view('user.baohanh');
+    }
+    public function showBaoDuong()
+    {
+        return view('user.baoduong');
+    }
 }
 
