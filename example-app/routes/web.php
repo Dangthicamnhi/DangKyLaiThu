@@ -34,3 +34,5 @@ Route::post('update/{id}', [UserController::class, 'postUpdateUser'])->name('use
 Route::get('delete/{id}', [UserController::class, 'deleteUser'])->name('user.deleteUser');
 
 route::get('/chitietsanpham', [UserController::class, 'showChiTietSanPham'])->name('sanpham');
+
+Route::get('/dichvu', [UserController::class, 'dichvu'])->name('dichvu');
