@@ -23,4 +23,4 @@ Route::get('delete/{id}', [UserController::class, 'deleteUser'])->name('user.del
 
 Route::get('/chitietsanpham', [UserController::class, 'showChiTietSanPham'])->name('sanpham');
 
-Route::get('/dichvu', [UserController::class, 'dichvu'])->name('dichvu');
+Route::get('/dichvu', [UserController::class, 'showDichvu'])->name('dichvu');

@@ -86,5 +86,10 @@ class UserController extends Controller
     {
         return view('user.chitietsanpham');
     }
+
+    public function showDichvu()
+    {
+        return view('user.dichvu');
+    }
 }
 

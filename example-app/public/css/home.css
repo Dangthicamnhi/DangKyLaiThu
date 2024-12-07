@@ -9,7 +9,7 @@ body {
     font-weight: 900;
 }
 
-.header {
+#header {
     background-color: #AFAFAF;
     height: 50vh;
 }
