@@ -1,0 +1,59 @@
+#header{
+    margin-top: -20px;
+}
+
+img {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+#content {
+    color: #1687C6;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.content-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+h3.title {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+
+h4.sub-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+i.content-text {
+    display: block;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-style: italic;
+}

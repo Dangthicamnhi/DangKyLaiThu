@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @section('content')
 <div class="container-fluid">
-    <div class="header row">
+    <div id="header" class="row">
         <div id="left-header" class="col-6 text-center">
             <h1>Lái thử hôm nay, chọn xe chuẩn ngay!</h1>
             <h3>Thủ tục nhanh gọn-Nhận xe nhanh chóng!</h3>
